@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+        <section class="card">
+            <div class="card-header">
+                <h1>Generate a Secure Password🔐</h1>
+                <div class="password-container">
+                    <span id="passwordResult">Your Password!</span>
+                    <div>
+                        <img src="assets/images/icon-copy-paste.png" alt="icon" class="icon-copy">
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <h2>Customize your password</h2>
+                <div class="card-body__content">
+                    <div class="option">
+                        <input type="checkbox" id="upper">
+                        <label for="upper">Uppercase</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="lower">
+                        <label for="lower">Lowercase</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="numbers">
+                        <label for="numbers">Numbers</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="symbols">
+                        <label for="symbols">Symbols</label>
+                    </div>
+                    <div class="option length">
+                        <label>Length: </label>
+                        <span id="password-length">10</span>
+                        <input type="range" min="2" max="16" value="10" id="inputRange">
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <button id="generate-password">Generate</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
