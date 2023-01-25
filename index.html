@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,12 +13,18 @@
 </head>
 <body>
     <main class="container">
+        <section class="error-card">
+            <p>🛑Error: You must select at least one option to generate a valid password!</p>
+        </section>
         <section class="card">
             <div class="card-header">
                 <h1>Generate a Secure Password🔐</h1>
                 <div class="password-container">
+                    <div class="copied-text-section">
+                        <p>Copied📋</p>
+                    </div>
                     <span id="passwordResult">Your Password!</span>
-                    <div>
+                    <div class="icon-container">
                         <img src="assets/images/icon-copy-paste.png" alt="icon" class="icon-copy">
                     </div>
                 </div>
