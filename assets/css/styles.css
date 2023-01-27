@@ -162,3 +162,43 @@ body {
 label:hover {
     cursor: pointer;
 }
+
+@media only screen and (max-width: 1024px) {
+   .error-card {
+    top: 8%;
+   }
+}
+
+@media only screen and (max-width: 510px) {
+    .card{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .card{
+        width: 350px;
+    }
+
+    .length {
+        position: static;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .card {
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    .card {
+        width: 310px;
+    }
+
+    .card .card-header .password-container {
+        width: 80%;
+    }
+}
